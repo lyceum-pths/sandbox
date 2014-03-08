@@ -34,15 +34,17 @@
 		С другой стороны,
 			$$A=\int\limits_1^2\vec{F}\cdot\dvec\vec{l}=q\int\limits_1^2\vec{E}\cdot\dvec\vec{l},$$
 		тогда
-			$$\left(\varphi_1-\varphi_2\right)=\int\limits_1^2\vec{E}\cdot\dvec\vec{l}=\int\limits_1^2 E\cos{\alpha}\,\d l=\int\limits_1^2 E_l\,\d l.$$
+			$$\left(\varphi_1-\varphi_2\right)=\int\limits_1^2\vec{E}\cdot\dvec\vec{l}=\int\limits_1^2 E\cos{\alpha}\d l=\int\limits_1^2 E_l\d{l}.$$
 		При малых $l$ верно, что
-			$$-\d\varphi=E_l\,\d l,$$
+			$$-\d\varphi=E_l\d{l},$$
 		откуда
 		\begin{equation}
 			E_l=-\frac{\d\varphi}{\d l}.
 		\end{equation}
 		В пространстве соответственно имеем
-			$$E_x=-\frac{\d\varphi}{\d x}, \quad E_y=-\frac{\d\varphi}{\d y}, \quad E_z=-\frac{\d\varphi}{\d z}.$$
+			$$E_x=-\frac{\d\varphi}{\d x}, \quad E_y=-\frac{\d\varphi}{\d y}, \quad E_z=-\frac{\d\varphi}{\d z},$$
+		что также можно записать в виде
+			$$\vec{E}=-\grad{\varphi}.$$
 		Все эти соображения наводят на новую размерность напряженности $E$:
 			$$\dim{E}=\frac{\text{В}}{\text{м}}.$$
 
@@ -50,7 +52,7 @@
 		\begin{enumerate}
 			\item Силовые линии не~пересекаются.
 			\item Электрическое поле перпендикулярно эквипотенциальной поверхности. Возьмем пробный заряд и~перенесем его вдоль эквипотенциальной поверхности. Запишем работу, совершенную полем:
-				$$A=qE\,\d l\cos{\alpha}=-q\,\d \varphi = 0, \quad E\cos{\alpha}=0,$$
+				$$A=qE\d{l}\cos{\alpha}=-q\d{\varphi} = 0, \quad E\cos{\alpha}=0,$$
 				следовательно, вектор напряженности перпендикулярен эквипотенциальной поверхности, а~при перемещении заряда вдоль нее поле не~совершает работу.
 			\item Силовое поле направлено в сторону уменьшения потенциала.
 			\item Силовая линия не пересекает эквипотенциальную поверхность дважды.
