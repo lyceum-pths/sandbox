@@ -1,5 +1,6 @@
 SET STR=main
 
+makeindex "%STR%.idx"
 pdflatex "%STR%.tex"
 bibtex "%STR%.aux"
 pdflatex "%STR%.tex"

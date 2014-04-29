@@ -8,6 +8,8 @@
 \setlength{\headsep}{0mm}
 \setlength{\textheight}{230mm}
 
+\makeindex
+
 \begin{document}
 
 \pagenumbering{gobble}
@@ -27,5 +29,9 @@
 \include{./tex/ch_2}
 \include{./tex/ch_3}
 \include{./tex/ch_4}
+
+\begin{theindex}
+	\input{main.ind}
+\end{theindex}
  
 \end{document}

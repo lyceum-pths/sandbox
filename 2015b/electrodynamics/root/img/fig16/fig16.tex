@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage{pst-electricfield}
+\begin{document}
+
+\pagestyle{empty}
+\begin{center}
+	\begin{pspicture*}(-5,-5)(5,5)
+		\psframe*[linecolor=white](-5,-5)(5,5)
+		\psElectricfield[Q={[1 -2 0][-1 2 0]},linecolor=blue]
+		\psEquipotential[Q={[1 -2 0][-1 2 0]},linecolor=red](-5,-5)(5,5)
+		\psEquipotential[Q={[1 -2 0][-1 2 0]},linecolor=red,Vmin=0,Vmax=0](-5,-5)(5,5)
+	\end{pspicture*}
+\end{center}
+\end{document} 
