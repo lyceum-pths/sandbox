@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.6)  30 APR 2014 20:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.6)  30 APR 2014 21:28
 entering extended mode
-**plot1.tex
-(C:\workspace2\sandbox\2015b\electrodynamics\root\img\plot1\plot1.tex
+**plot4.tex
+(C:\workspace2\sandbox\2015b\electrodynamics\root\img\plot4\plot4.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -473,7 +473,7 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplotmarks.cod
 e.tex"
 File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
-))) (C:\workspace2\sandbox\2015b\electrodynamics\root\img\plot1\plot1.aux)
+))) (C:\workspace2\sandbox\2015b\electrodynamics\root\img\plot4\plot4.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
@@ -496,14 +496,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 15.
 [1
 
-] (C:\workspace2\sandbox\2015b\electrodynamics\root\img\plot1\plot1.aux) ) 
+] (C:\workspace2\sandbox\2015b\electrodynamics\root\img\plot4\plot4.aux) ) 
 Here is how much of TeX's memory you used:
- 16389 strings out of 493922
- 413869 string characters out of 3147309
- 568354 words of memory out of 3000000
- 19399 multiletter control sequences out of 15000+200000
+ 16421 strings out of 493922
+ 414499 string characters out of 3147309
+ 569354 words of memory out of 3000000
+ 19431 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  63i,5n,81p,719b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on plot1.dvi (1 page, 9344 bytes).
+Output written on plot4.dvi (1 page, 9504 bytes).
