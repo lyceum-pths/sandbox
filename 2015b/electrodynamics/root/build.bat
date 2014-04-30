@@ -1,9 +1,8 @@
 SET STR=main
 
+pdflatex "%STR%.tex"
 makeindex "%STR%.idx"
-pdflatex "%STR%.tex"
 bibtex "%STR%.aux"
-pdflatex "%STR%.tex"
 pdflatex "%STR%.tex"
 
 DEL "%STR%.log"
