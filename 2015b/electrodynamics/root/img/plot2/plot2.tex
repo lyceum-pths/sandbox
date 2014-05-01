@@ -1,16 +1,16 @@
-\documentclass{article}
+%\documentclass{article}
 
-\usepackage[latin1]{inputenc}
-\usepackage{pgfplots}
-\usepackage{tikz}
+%\usepackage[latin1]{inputenc}
+%\usepackage{pgfplots}
+%\usepackage{tikz}
 
-\pgfplotsset{compat=1.10}
+%\pgfplotsset{compat=1.10}
+
+%\begin{document}
+%\pagestyle{empty}
 
 % GNUPLOT required
-\begin{document}
-\pagestyle{empty}
-
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=1.9, >=stealth]
 	%axises
 	\draw[->] (0,0) -- (5.2,0) node[below right] {$r$};
 	\draw[->] (0,0) -- (0,3.2) node[left] {$E$};
@@ -24,8 +24,8 @@
 
 	%E(r) plot
 	\draw[red, thick] (0, 0) -- (1, 2);
-    \draw[red, thick, domain=1:5.2] plot (\x, {2/(\x*\x)}) node[black, above left] {$E=E(r)$};
+	\draw[red, thick, domain=1:5.2] plot (\x, {2/(\x*\x)}) node[black, above left] {$E=E(r)$};
 \end{tikzpicture}
 
 
-\end{document}
+%\end{document}
