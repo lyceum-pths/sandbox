@@ -3,6 +3,7 @@ SET STR=main
 pdflatex "%STR%.tex"
 makeindex "%STR%.idx"
 bibtex "%STR%.aux"
+makeindex "%STR%.idx"
 pdflatex "%STR%.tex"
 
 DEL "%STR%.log"

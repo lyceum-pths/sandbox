@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\pgfplotsset{compat=1.10}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tikzpicture}[>=stealth]
+	\draw[cyan, fill] (1.5, 0) circle [radius=0.075];
+	\draw[-latex, thick, ->] (-1.5, 0) node[below] {$-q$} -- (1.5, 0) node[below] {$+q$};
+	\draw[cyan, fill] (-1.5, 0) circle [radius=0.075];
+	\node[above] at (0, 0) {$\textbf{d}$};
+
+	\node[above] at (2.5, -1.7) {$R$};
+
+	\draw[thin, darkgray, ->] (0, 0) -- ++(-37:1cm) node[black, above] {$\textbf{n}$};
+	\draw[thin, gray, ->]  (0, 0) -- ++(-37:5cm);
+
+	\draw[red, thick, ->] ++(-37:5cm) -- ++(-148:0.5cm) node[black, below] {$\textbf{E}$};
+\end{tikzpicture}
+
+\end{document}
