@@ -12,6 +12,7 @@ DEL "%STR%.aux"
 DEL "%STR%.out"
 DEL "%STR%.blg"
 DEL "%STR%.bbl"
+DEL "%STR%.ilg"
 DEL "/tex/*.aux"
 
 "%STR%.pdf"
