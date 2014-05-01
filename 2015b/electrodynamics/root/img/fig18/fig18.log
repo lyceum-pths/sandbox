@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.6)  1 MAY 2014 18:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.6)  1 MAY 2014 18:50
 entering extended mode
-**fig16.tex
-(C:\workspace2\sandbox\2015b\electrodynamics\root\img\fig16\fig16.tex
+**fig18.tex
+(C:\workspace2\sandbox\2015b\electrodynamics\root\img\fig18\fig18.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -165,7 +165,7 @@ ex" ("C:\Program Files\MiKTeX 2.9\tex\generic\multido\multido.tex"
 ) `pst-electricfield' v0.14, 2011/03/26 (ml,jg,hv))
 File: pst-electricfield.tex 2011/03/26 v0.14 `pst-electricfield' (ml&jg&pm&hv)
 )
-(C:\workspace2\sandbox\2015b\electrodynamics\root\img\fig16\fig16.aux)
+(C:\workspace2\sandbox\2015b\electrodynamics\root\img\fig18\fig18.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
@@ -181,7 +181,7 @@ LaTeX Font Info:    ... okay on input line 4.
  [1
 
 ]
-(C:\workspace2\sandbox\2015b\electrodynamics\root\img\fig16\fig16.aux) ) 
+(C:\workspace2\sandbox\2015b\electrodynamics\root\img\fig18\fig18.aux) ) 
 Here is how much of TeX's memory you used:
  3040 strings out of 493922
  47199 string characters out of 3147309
@@ -191,4 +191,4 @@ Here is how much of TeX's memory you used:
  841 hyphenation exceptions out of 8191
  44i,5n,53p,337b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on fig16.dvi (1 page, 2800 bytes).
+Output written on fig18.dvi (1 page, 2800 bytes).
