@@ -11,8 +11,8 @@ def check_activation():
 
 def generate(hashcode, size=(5,5)):
     random.seed(hashcode+'lol')
-    template = """<rect x="{}" y="{}" height="40" width="40" fill="{}" /> """
-    result = '<svg width="{}" height="{}">'.format(size[1]*40, size[0]*40)
+    template = """<rect x="{}" y="{}" height="20" width="20" fill="{}" /> """
+    result = '<svg width="{}" height="{}">'.format(size[1]*20, size[0]*20)
     
     color_index = ord(hashcode[-1])%len(colors)
     unique_columns = size[1]//2 + size[1]%2
@@ -20,14 +20,14 @@ def generate(hashcode, size=(5,5)):
         for column in range(unique_columns):
             if check_activation():
                 # add pixel
-                result += template.format(column*40, row*40, colors[color_index])
+                result += template.format(column*20, row*20, colors[color_index])
                 
                 # add symmetrical pixel
                 symmetrical_column = size[1] - 1 - column
                 # if we draw central column we do not need to draw it twice
                 if symmetrical_column == column:
                     continue
-                result += template.format(symmetrical_column*40, row*40, colors[color_index])
+                result += template.format(symmetrical_column*20, row*20, colors[color_index])
                 
     return result+'</svg>'
 
