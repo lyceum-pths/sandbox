@@ -8,8 +8,7 @@ import java.util.Scanner;
 
 public class Identicon {
 	public static void main(String[] args) throws IOException{
-		Scanner sc = new Scanner(System.in);
-		String s = sc.nextLine();
+		String s = args[0];
 		Random random = new Random(s.hashCode());
 		int r = random.nextInt(256);
 		int g = random.nextInt(256);
@@ -69,10 +68,7 @@ public class Identicon {
 				code += "\n";
 			}
 		code += "</svg>";
-		FileOutputStream outstr = new FileOutputStream("C://Users//Александрина//Desktop//image.html");
-		byte[] buffer = code.getBytes();
-        outstr.write(buffer, 0, buffer.length);
-		sc.close();
+		System.out.println(code);
 		
 	}
 
