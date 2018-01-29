@@ -8,7 +8,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--name', type=str)
     args = parser.parse_args()
-    assert args.name is not None, "You have to specify an optional agrument --name"
+    assert args.name is not None, "You have to specify an agrument --name"
     random.seed(args.name)
 
     listdir = os.listdir('./')
