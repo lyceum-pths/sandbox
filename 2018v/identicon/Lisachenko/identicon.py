@@ -30,6 +30,8 @@ def identicon(s, f):
         g = random.randint(0, 255)
         b = random.randint(0, 255)
     
+    rect(0, 0, M * N, M * N, 255, 255, 255)    
+    
     if f == 'r':
         for i in range(N):
             for j in range(N):
