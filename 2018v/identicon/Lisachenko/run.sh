@@ -1,1 +1,1 @@
-python identicon.py
+python identicon.py $*
