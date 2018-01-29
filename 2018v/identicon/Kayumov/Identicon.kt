@@ -2,30 +2,29 @@ import java.awt.Color
 import java.io.*
 import java.util.Random
 
-object Identicon {
 
-    private val W = 140
-    private val H = 140
+    private const val W = 140
+    private const val H = 140
 
-    private val FACE_X = 70
-    private val FACE_Y = 70
-    private val FACE_RX = 50
-    private val FACE_RY = 60
+    private const val FACE_X = 70
+    private const val FACE_Y = 70
+    private const val FACE_RX = 50
+    private const val FACE_RY = 60
 
-    private val EYE_Y = 60
-    private val EYE_RX = 12
-    private val EYE_RY = 12
+    private const val EYE_Y = 60
+    private const val EYE_RX = 12
+    private const val EYE_RY = 12
 
-    private val NOSE_BRIDGE = 20
+    private const val NOSE_BRIDGE = 20
 
-    private val MAX_HAPPINESS = 30
+    private const val MAX_HAPPINESS = 30
 
     private val faceColors = ArrayList<Color>()
     private val eyeColors = ArrayList<Color>()
     private val eyeBrowColors = ArrayList<Color>()
     private val lipsColors = ArrayList<Color>()
 
-    init {
+    fun init() {
         var reader = BufferedReader(FileReader("face_colors.in"))
         reader.readLines().forEach {
             faceColors.add(getRGB(it))
@@ -85,12 +84,21 @@ object Identicon {
         return Color(ret[0], ret[1], ret[2])
     }
 
-    @JvmStatic
     fun main(args: Array<String>) {
-        val names = arrayOf("Яша", "Аня", "Катя", "Александрина")
+        init()
+        if (args.isEmpty()) {
+            println("No input")
+            return
+        }
+        val names = args[0].split(" ")
         //val names = Array(100, { it.toString() })
         val images = Array(names.size, { generateImage(names[it]) })
-        saveHTML(images)
+        //saveHTML(images)
+        for (image in images) {
+            println(image.name)
+            println(image.toString())
+            println()
+        }
     }
 
     private fun generateImage(s: String): SVGImage {
@@ -153,4 +161,3 @@ object Identicon {
         }
 
     }
-}
