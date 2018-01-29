@@ -5,10 +5,10 @@ N = 5
 M = 20
 
 def rect(x, y, width, height, col_r, col_g, col_b):
-    print('<rect x="' + str(x) + '" y="' + str(y) + '" width="' + str(width) + '" height="' + str(height) + '" style="fill:rgb('+str(col_r)+','+str(col_g)+','+str(col_b)+')" />', file=fout)
+    print('<rect x="' + str(x) + '" y="' + str(y) + '" width="' + str(width) + '" height="' + str(height) + '" style="fill:rgb('+str(col_r)+','+str(col_g)+','+str(col_b)+')" />')
 
 def circle(cx, cy, r, col_r, col_g, col_b):
-    print('<circle cx="' + str(cx) + '" cy="' + str(cy) + '" r="' + str(r) + '" style="fill:rgb('+str(col_r)+','+str(col_g)+','+str(col_b)+')" />', file=fout)
+    print('<circle cx="' + str(cx) + '" cy="' + str(cy) + '" r="' + str(r) + '" style="fill:rgb('+str(col_r)+','+str(col_g)+','+str(col_b)+')" />')
 
 def identicon(s, f):
     im = [[0 for i in range(N)] for j in range(N)]
@@ -19,8 +19,8 @@ def identicon(s, f):
             im[i][j] = int(random.random() > 0.5)
             im[i][-j - 1] = im[i][j]
     
-    print('<p>' + s + '</p>',file=fout)
-    print('<svg width="' + str(M*N) + '" height="' + str(M*N) + '">', file=fout)
+    print('<p>' + s + '</p>')
+    print('<svg width="' + str(M*N) + '" height="' + str(M*N) + '">')
     
     r=255
     g=255
@@ -56,9 +56,7 @@ def identicon(s, f):
                         rect(M*j + M//2, M*i + M//2, M, M, r, g, b)
                     circle(M*j + M//2, M*i + M//2, M//2, 255, 255, 255)
 
-fout = open('identicon.html', 'w')
-print('<html>\n<body>\n', file=fout)
-for i in range(1, 101):
-    identicon(str(i), 'c++')
-print('\n</html>\n</body>\n', file=fout)
-fout.close()
+
+print('<html>\n<body>\n')
+identicon(sys.argv[1], 'c++')
+print('\n</html>\n</body>\n')
