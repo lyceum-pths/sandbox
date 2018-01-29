@@ -1,5 +1,3 @@
-package main;
-
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -68,8 +66,7 @@ public class Identicon {
 				code += "\n";
 			}
 		code += "</svg>";
-		System.out.println(code);
-		
+		System.out.println(code);	
 	}
 
 }
