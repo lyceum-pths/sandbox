@@ -61,10 +61,10 @@ public class Identicon {
 			}
 		}
 		String code = "";
-		code += "<svg width=\"204\" height=\"204\">"+"\n"; 
+		code += "<svg width=\"102\" height=\"102\">"+"\n"; 
 		for(int i = 0; i < 6; i++)
 			for(int j = 0; j < 6; j++){
-				code += "<rect x=\""+i*34+"\" y=\""+j*34+"\" width=\"34\" height=\"34\" style=\"fill:rgb("+(255-a[i][j]*r)+", "+(255-a[i][j]*g)+", "+(255-a[i][j]*b)+")\" />";
+				code += "<rect x=\""+i*17+"\" y=\""+j*17+"\" width=\"17\" height=\"17\" style=\"fill:rgb("+(255-a[i][j]*r)+", "+(255-a[i][j]*g)+", "+(255-a[i][j]*b)+")\" />";
 				code += "\n";
 			}
 		code += "</svg>";
