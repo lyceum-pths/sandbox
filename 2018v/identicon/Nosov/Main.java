@@ -1,6 +1,3 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 public class Main {
@@ -15,7 +12,6 @@ public class Main {
 	}
 
 	public static void main(String[] args) throws IOException {
-		BufferedWriter out = new BufferedWriter(new FileWriter(new File("stdout.svg")));
 		for(int j = 0; j < 1; j++){
 		String s = args[0];
 		int p = 1;
@@ -56,15 +52,15 @@ public class Main {
 				}
 			}
 		}
-		out.write("<db>");
-		out.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>" + "\n");
-		out.write("<svg version = \"1.1\"" + "\n");
-		out.write("baseProfile=\"full\"");
-		out.write("height = \"100px\"  width = \"100px\">");
+		System.out.print("<db>");
+		System.out.print("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>" + "\n");
+		System.out.print("<svg version = \"1.1\"" + "\n");
+		System.out.print("baseProfile=\"full\"");
+		System.out.print("height = \"100px\"  width = \"100px\">");
 		if(value.charAt(0) == '0'){
-			out.write("<rect x=\"0\" y=\"0\" width=\"100\" height=\"100\" fill=\"rgb(50, 50, 50)\" stroke=\"rgb(50, 50, 50)\"/>");
+			System.out.print("<rect x=\"0\" y=\"0\" width=\"100\" height=\"100\" fill=\"rgb(50, 50, 50)\" stroke=\"rgb(50, 50, 50)\"/>");
 		}else{
-			out.write("<rect x=\"0\" y=\"0\" width=\"100\" height=\"100\" fill=\"rgb(205, 205, 205)\" stroke=\"rgb(205, 205, 205)\"/>");
+			System.out.print("<rect x=\"0\" y=\"0\" width=\"100\" height=\"100\" fill=\"rgb(205, 205, 205)\" stroke=\"rgb(205, 205, 205)\"/>");
 		}
 		String color1 = "";
 		String color2 = "";
@@ -146,63 +142,62 @@ public class Main {
 			}
 		}
 		if(value.charAt(5) == '0'){
-			out.write("<rect x=\"3\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"3\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
 		}
 		if(value.charAt(6) == '0'){
-			out.write("<rect x=\"23\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"23\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
 		}
 		if(value.charAt(7) == '0'){
-			out.write("<rect x=\"43\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color2 +"\" stroke-width=\"3px\"/>");
+			System.out.print("<rect x=\"43\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color2 +"\" stroke-width=\"3px\"/>");
 		}
 		if(value.charAt(8) == '0'){
-			out.write("<rect x=\"63\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"63\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
 		}
 		if(value.charAt(9) == '0'){
-			out.write("<rect x=\"83\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"83\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
 		}
 		if(value.charAt(10) == '0'){
-			out.write("<rect x=\"23\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color1 +"\" stroke-width=\"3px\"/>");
-			out.write("<rect x=\"63\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color1 +"\" stroke-width=\"3px\"/>");
+			System.out.print("<rect x=\"23\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color1 +"\" stroke-width=\"3px\"/>");
+			System.out.print("<rect x=\"63\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color1 +"\" stroke-width=\"3px\"/>");
 		}
 		if(value.charAt(11) == '0'){
-			out.write("<rect x=\"3\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color2 +"\" stroke-width=\"3px\"/>");
-			out.write("<rect x=\"83\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color2 +"\" stroke-width=\"3px\"/>");
+			System.out.print("<rect x=\"3\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color2 +"\" stroke-width=\"3px\"/>");
+			System.out.print("<rect x=\"83\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color2 +"\" stroke-width=\"3px\"/>");
 		}
 		if(value.charAt(12) == '0'){
-			out.write("<rect x=\"3\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
-			out.write("<rect x=\"23\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"3\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"23\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
 		}
 		if(value.charAt(13) == '0'){
-			out.write("<rect x=\"3\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
-			out.write("<rect x=\"43\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"3\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"43\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
 		}
 		if(value.charAt(14) == '0'){
-			out.write("<rect x=\"63\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
-			out.write("<rect x=\"3\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"63\" y=\"3\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"3\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
 		}
 		if(value.charAt(15) == '0'){
-			out.write("<rect x=\"23\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
-			out.write("<rect x=\"83\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"23\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"83\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
 		}
 		if(value.charAt(16) == '0'){
-			out.write("<rect x=\"43\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
-			out.write("<rect x=\"63\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"43\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"63\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
 		}
 		if(value.charAt(17) == '0'){
-			out.write("<rect x=\"43\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
-			out.write("<rect x=\"83\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"43\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"83\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
 		}
 		if(value.charAt(18) == '0'){
-			out.write("<rect x=\"63\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
-			out.write("<rect x=\"83\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"63\" y=\"83\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
+			System.out.print("<rect x=\"83\" y=\"63\" width=\"14\" height=\"14\" fill=\""+ color2 +"\" stroke=\""+ color2 +"\"/>");
 		}
 		if(value.charAt(19) == '0'){
-			out.write("<rect x=\"23\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
-			out.write("<rect x=\"43\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"23\" y=\"43\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
+			System.out.print("<rect x=\"43\" y=\"23\" width=\"14\" height=\"14\" fill=\""+ color1 +"\" stroke=\""+ color1 +"\"/>");
 		}
-		out.write("</db>");
+		System.out.print("</db>");
 	}
-		out.close();
 	}
 	
 }
