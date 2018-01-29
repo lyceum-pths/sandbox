@@ -1,4 +1,5 @@
 import random
+import sys
 colors = ['#F44336', '#9C27B0', '#3F51B5', '#2196F3', '#00BCD4', '#FFC107', '#FFEB3B']
 
 def md5(string, salt='lollol'):
@@ -31,4 +32,4 @@ def generate(hashcode, size=(5,5)):
                 
     return result+'</svg>'
 
-print(generate(md5(sys.args[0])), size=(5,5))
+print(generate(md5(sys.argv[0])))
