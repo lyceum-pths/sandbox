@@ -11,4 +11,4 @@ http://www.school.ioffe.ru/
 History
 =======
 
-Used by 2015b, 2017a, 2018v.
+Used by 2015b, 2017a, 2018a, 2018v.
