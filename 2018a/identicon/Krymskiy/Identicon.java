@@ -3,7 +3,7 @@ import java.security.*;
 import java.util.*;
 
 
-public class Krymskiy {
+public class Identicon {
 	public static String genIdenticon(String s) {
 		byte[] bite = new byte[2*s.length()];
 		for(int i = 0; i < s.length(); i++){
