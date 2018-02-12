@@ -23,18 +23,17 @@ public class Identicon {
 	public static byte[][] generateIdenticons(String text, int image_width, int image_height){
 		int width = image_width, height = image_height;
 		byte[][] identicon = new byte[width][height];
-        Random rand = new Random(text.hashCode());
-        colour[0] = rand.nextInt(256);
-        colour[1] = rand.nextInt(256);
-        colour[2] = rand.nextInt(256);
-        for(int x = 0 ; x <= width / 2 ; x++) {
-            for (int y = 0; y < height; y++) {
-            	identicon[x][y] = (byte) rand.nextInt(2);
-            	identicon[width - x - 1][y] = identicon[x][y];
-            }
-            
-        }
-        return identicon;
+        	Random rand = new Random(text.hashCode());
+        	colour[0] = rand.nextInt(256);
+        	colour[1] = rand.nextInt(256);
+        	colour[2] = rand.nextInt(256);
+        	for(int x = 0 ; x <= width / 2 ; x++) {
+            		for (int y = 0; y < height; y++) {
+            			identicon[x][y] = (byte) rand.nextInt(2);
+            			identicon[width - x - 1][y] = identicon[x][y];
+            		}            
+        	}
+        	return identicon;
 	}
 	
 	public static void openHTML() throws IOException {
@@ -81,12 +80,7 @@ public class Identicon {
 			String s = Integer.toString(i);
 			byte [][] image = generateIdenticons(s, 6, 6);
 			createHTML(image);
-		}
-		
-		String s = "mikhail-ershov";
-		byte [][] image = generateIdenticons(s, 6, 6);
-		createHTML(image);
-		
+		}		
 		closeHTML();
 		print.close();
 	}
