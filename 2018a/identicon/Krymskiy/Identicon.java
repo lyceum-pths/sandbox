@@ -1,7 +1,8 @@
+package identicon.Krymskiy;
+
 import java.io.*;
 import java.security.*;
 import java.util.*;
-
 
 public class Identicon {
 	public static String genIdenticon(String s) {
