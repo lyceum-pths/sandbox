@@ -1,9 +1,9 @@
 Sandbox
 =======
 
-Sandbox for learning git and doing any experiments
+Sandbox for learning git and doing any experiments.
 
-Lyceum "Physical-Technical High School"
+Lyceum "Physical-Technical High School".
 
 http://www.school.ioffe.ru/
 
