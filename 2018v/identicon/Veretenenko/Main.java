@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.io.IOException;
+//import java.util.Scanner;
 
 public class Main {
 
@@ -58,9 +59,9 @@ public class Main {
         return svg;
     }
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String s = in.nextLine();
+    public static void main(String[] args) throws IOException {
+        //Scanner in = new Scanner(System.in);
+        String s = args[0]; //in.nextLine(); 
         String out = genId(s, 400, 400);
         System.out.println(out);
     }
@@ -77,3 +78,4 @@ public class Main {
         }
     }
 }
+

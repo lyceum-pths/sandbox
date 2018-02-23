@@ -13,6 +13,7 @@ if __name__ == '__main__':
 
     listdir = os.listdir('./')
     listdir.remove('run.py') # ignore this file
+    listdir.remove('README.md') # and this
     folder_name = random.choice(listdir)
 
     print('Identicon from ' + folder_name)
