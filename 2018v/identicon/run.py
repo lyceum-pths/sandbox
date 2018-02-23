@@ -12,8 +12,7 @@ if __name__ == '__main__':
     random.seed(args.n)
 
     listdir = os.listdir('./')
-    listdir.remove('run.py') # ignore this file
-    listdir.remove('README.md') # and this
+    listdir = list(filter(lambda x: x not in ['run.py', 'README.md', '.gitignore'], listdir)) # ignore these files
     folder_name = random.choice(listdir)
 
     print('Identicon from ' + folder_name)
